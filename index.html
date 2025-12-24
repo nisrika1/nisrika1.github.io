@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srikanth Nimmagadda | Full-Stack Software Engineer</title>
+    <title>Srikanth Nimmagadda | Java Full-Stack & Cloud Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="cdnjs.cloudflare.com">
     <style>
@@ -11,166 +11,144 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; }
         .mono { font-family: 'JetBrains Mono', monospace; }
         .bento-card { background: #0f172a; border: 1px solid #1e293b; transition: all 0.3s ease; }
-        .bento-card:hover { border-color: #3b82f6; }
+        .bento-card:hover { border-color: #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.1); }
         .gradient-text { background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .mesh-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; 
-            background: radial-gradient(circle at 0% 0%, #1e293b 0%, #020617 100%); }
         b.stat { color: #60a5fa; font-weight: 800; }
+        .requirement-tag { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #60a5fa; font-size: 10px; padding: 2px 8px; border-radius: 99px; font-weight: 700; text-transform: uppercase; }
     </style>
 </head>
 <body class="p-4 md:p-12 lg:p-20">
-    <div class="mesh-bg"></div>
 
-    <!-- HEADER / CONTACT -->
+    <!-- TOP NAVIGATION -->
     <nav class="max-w-6xl mx-auto mb-10 flex flex-wrap justify-between items-center gap-6 bento-card p-6 rounded-[2rem]">
         <div class="mono text-blue-400 font-bold text-xl tracking-tighter">nisrika1.dev</div>
         <div class="flex flex-wrap gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest">
-            <span><i class="fas fa-map-marker-alt mr-2"></i>Santa Fe, NM</span>
-            <a href="tel:5057181440" class="hover:text-white"><i class="fas fa-phone mr-2"></i>+1(505)-718-1440</a>
             <a href="mailto:srikanth15107@gmail.com" class="hover:text-white"><i class="fas fa-envelope mr-2"></i>srikanth15107@gmail.com</a>
-        </div>
-        <div class="flex gap-4 text-xl">
-            <a href="linkedin.com" class="hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
-            <a href="github.com" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+            <a href="linkedin.com" class="hover:text-blue-500 transition"><i class="fab fa-linkedin mr-1"></i> LinkedIn</a>
+            <a href="github.com" class="hover:text-white transition"><i class="fab fa-github mr-1"></i> GitHub</a>
         </div>
     </nav>
 
     <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4">
         
-        <!-- HERO / PROFILE -->
+        <!-- HERO SECTION: FOCUSED ON JAVA/CLOUD/AI-ASSISTED -->
         <div class="md:col-span-8 bento-card rounded-[2.5rem] p-10 md:p-16">
+            <div class="flex gap-2 mb-6">
+                <span class="requirement-tag">Java/J2EE Expert</span>
+                <span class="requirement-tag">Cloud Native (AWS/GCP)</span>
+            </div>
             <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-none tracking-tighter">
-                Full-Stack <br/><span class="gradient-text">Engineer.</span>
+                Scalable <span class="gradient-text">Systems</span> & AI-Assisted Dev.
             </h1>
             <p class="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-                Experienced Full-Stack Developer with <b class="stat">4 years of expertise</b>. Recently engineered an **LLM-OCR pipeline** reducing manual entry by <b class="stat">30-70%</b>. Known for improving performance, security, and UX through automated testing and architectural enhancements.
+                4+ years of expertise in <b class="text-white">Java/J2EE and Spring Boot</b>. Proficient in architecting cloud-native microservices on <b class="text-white">AWS & GCP</b>, leveraging <b class="stat">AI-assisted tools (Claude/Copilot)</b> to accelerate code generation, unit testing, and documentation.
             </p>
         </div>
 
-        <!-- EDUCATION HONORS -->
+        <!-- ACADEMIC CARD -->
         <div class="md:col-span-4 bento-card rounded-[2.5rem] p-8 flex flex-col justify-center border-l-4 border-l-yellow-500/50">
             <div class="mb-6">
-                <p class="text-[10px] text-yellow-500 font-black uppercase tracking-widest mb-1">Top Distinction</p>
-                <h3 class="text-2xl font-extrabold">Gold Medalist</h3>
-                <p class="text-xs text-gray-500 font-semibold tracking-tighter">Class of 2019 • B.Tech ECE</p>
+                <p class="text-[10px] text-yellow-500 font-black uppercase tracking-widest mb-1">Recognition</p>
+                <h3 class="text-3xl font-extrabold">Gold Medalist</h3>
+                <p class="text-xs text-gray-500 font-semibold italic">Class of 2019 • SJSU Alumnus</p>
             </div>
+            <div class="h-[1px] bg-gray-800 w-full my-4"></div>
             <div>
-                <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest mb-1">Advanced Degree</p>
-                <h3 class="text-lg font-bold text-gray-200">MS, Software Engineering</h3>
-                <p class="text-xs text-gray-500 font-semibold tracking-tighter">San Jose State University (2023)</p>
+                <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest mb-1 italic">Agile & CI/CD</p>
+                <p class="text-sm font-bold">Git, JUnit, Harness CI/CD</p>
             </div>
         </div>
 
-        <!-- FULL SKILLS MATRIX -->
+        <!-- TARGETED SKILLS MATRIX (MATCHING REQUIREMENTS) -->
         <div id="skills" class="md:col-span-12 bento-card rounded-[2.5rem] p-10">
-            <h3 class="mono text-xs text-blue-500 mb-8 font-bold uppercase tracking-widest">// Technical_Stack_Inventory</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                <div class="space-y-2">
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest">Languages</p>
-                    <p class="text-xs font-semibold leading-relaxed">C/C++, Java, JavaScript, Python, PHP, SQL, HTML, CSS, Shell Scripting</p>
+            <h3 class="mono text-xs text-blue-500 mb-8 font-bold uppercase tracking-widest">// Core_Competencies_Matrix</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-3">Enterprise Java</p>
+                    <p class="text-xs font-semibold leading-relaxed">Java/J2EE, Spring, Spring Boot, Spring MVC, Hibernate, RESTful APIs</p>
                 </div>
-                <div class="space-y-2">
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest">Frameworks</p>
-                    <p class="text-xs font-semibold leading-relaxed">React, Angular, NodeJS, Spring MVC, Spring Boot, Bootstrap, Selenium</p>
+                <div>
+                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-3">Cloud Platforms</p>
+                    <p class="text-xs font-semibold leading-relaxed text-blue-400">AWS (EC2, S3, EKS), Google Cloud Platform (GCP), Docker, Kubernetes</p>
                 </div>
-                <div class="space-y-2">
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest">Databases</p>
-                    <p class="text-xs font-semibold leading-relaxed">Oracle, MySQL, MongoDB, DB2, PostgreSQL, Elasticsearch, Firebase</p>
+                <div>
+                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-3">DevOps & Quality</p>
+                    <p class="text-xs font-semibold leading-relaxed">Agile, Git, <span class="text-blue-400">Harness CI/CD</span>, Jenkins, JUnit, Mockito, Selenium</p>
                 </div>
-                <div class="space-y-2">
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest">Networking/API</p>
-                    <p class="text-xs font-semibold leading-relaxed">RESTful API, gRPC, TCP, UDP, HTTP, WebSocket, Tomcat</p>
-                </div>
-                <div class="space-y-2">
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest">Cloud & Tools</p>
-                    <p class="text-xs font-semibold leading-relaxed">AWS (EKS/ECS/S3), Docker, Kubernetes, Kafka, Postman, Swagger UI, Junit, Mockito</p>
+                <div>
+                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-3">AI-Assisted Tools</p>
+                    <p class="text-xs font-semibold leading-relaxed text-purple-400">GitHub Copilot, Claude 3.5, ChatGPT, LangChain (RAG)</p>
                 </div>
             </div>
         </div>
 
-        <!-- DETAILED PROFESSIONAL EXPERIENCE -->
+        <!-- PROFESSIONAL HISTORY -->
         <div id="experience" class="md:col-span-12 bento-card rounded-[2.5rem] p-10">
-            <h3 class="mono text-xs text-blue-500 mb-10 font-bold uppercase tracking-widest">// Career_Snapshot</h3>
+            <h3 class="mono text-xs text-blue-500 mb-10 font-bold uppercase tracking-widest">// Professional_Experience</h3>
             <div class="space-y-12">
                 <!-- DELOITTE -->
                 <div class="relative pl-8 border-l border-blue-500/30">
                     <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <div class="flex flex-wrap justify-between items-baseline mb-6">
+                    <div class="flex flex-wrap justify-between items-baseline mb-4">
                         <h4 class="text-2xl font-extrabold tracking-tight">Deloitte <span class="text-sm font-normal text-gray-600 ml-2 italic">/ Software Engineer</span></h4>
                         <span class="mono text-[10px] text-gray-500 uppercase font-bold tracking-widest">May 2024 — Present</span>
                     </div>
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
-                        <li>Developed RESTful APIs for WorkPath platform, <b class="stat">improving response times by 25%</b>.</li>
-                        <li>Built **LLM-OCR pipeline** for automated form processing, <b class="stat">reducing manual entry by 70%</b>.</li>
-                        <li>Created AWS QuickSight dashboards, <b class="stat">accelerating decision-making by 90%</b>.</li>
-                        <li>Optimized Oracle DB operations to enhance system reliability and scalability.</li>
+                        <li>• Developed scalable **RESTful APIs** with Java/Spring Boot; <b class="stat">improving latency by 25%</b>.</li>
+                        <li>• Leveraged <b class="text-white">GitHub Copilot</b> to accelerate unit test generation (JUnit) and documentation.</li>
+                        <li>• Managed relational databases (Oracle) ensuring high availability and data integrity.</li>
+                        <li>• Delivered cloud-native features on <b class="text-white">AWS/GCP</b> utilizing CI/CD pipelines.</li>
                     </ul>
                 </div>
 
                 <!-- CAPGEMINI -->
                 <div class="relative pl-8 border-l border-gray-800">
                     <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-gray-800 rounded-full"></div>
-                    <div class="flex flex-wrap justify-between items-baseline mb-6">
+                    <div class="flex flex-wrap justify-between items-baseline mb-4">
                         <h4 class="text-2xl font-extrabold tracking-tight text-gray-300">Capgemini <span class="text-sm font-normal text-gray-600 ml-2 italic">/ Full Stack Developer</span></h4>
                         <span class="mono text-[10px] text-gray-500 uppercase font-bold tracking-widest">Jun 2023 — May 2024</span>
                     </div>
                     <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
-                        <li>Refactored Microservices with multithreading, <b class="stat">reducing processing times by 90%</b>.</li>
-                        <li>Enhanced database efficiency by <b class="stat">25%</b> via MySQL schema optimization and query tuning.</li>
-                        <li>Implemented **OpenID Connect** ensuring stringent security and application data protection.</li>
-                        <li>Conducted code reviews and debugging, resulting in a **40% decrease** in customer complaints.</li>
-                    </ul>
-                </div>
-
-                <!-- IBM -->
-                <div class="relative pl-8 border-l border-gray-800">
-                    <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-gray-800 rounded-full"></div>
-                    <div class="flex flex-wrap justify-between items-baseline mb-6">
-                        <h4 class="text-2xl font-extrabold tracking-tight text-gray-300">IBM <span class="text-sm font-normal text-gray-600 ml-2 italic">/ Java Full Stack Developer</span></h4>
-                        <span class="mono text-[10px] text-gray-500 uppercase font-bold tracking-widest">Jun 2019 — Jun 2021</span>
-                    </div>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
-                        <li>Architected cloud management platform, <b class="stat">reducing manual resource requests by 95%</b>.</li>
-                        <li>Automated **~1400 sanity test cases** using Selenium, resulting in a 6x increase in test frequency.</li>
-                        <li>Liaised with Support to debug problems, resulting in a **34% decrease** in backlogs.</li>
-                        <li>Orchestrated Docker containers to package and deploy apps consistently across all environments.</li>
+                        <li>• Optimized MySQL database efficiency by <b class="stat">25%</b> through query tuning.</li>
+                        <li>• Refactored Java Microservices for high-throughput e-commerce environments.</li>
+                        <li>• Mentored team on **Agile best practices** and Git-flow version control.</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- ALL PROJECTS -->
+        <!-- PROJECTS -->
         <div id="projects" class="md:col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="bento-card rounded-3xl p-8">
+            <div class="bento-card rounded-3xl p-8 hover:bg-blue-900/10 transition">
                 <i class="fas fa-brain text-blue-500 mb-4 text-xl"></i>
                 <h4 class="font-bold mb-1">EduGenie</h4>
-                <p class="text-[10px] text-gray-600 uppercase font-black tracking-widest mb-4">AI / GPT-4 / LangChain</p>
-                <p class="text-xs text-gray-500 leading-relaxed italic">AI platform for adaptive content for 2,000+ users via AWS Lambda/S3.</p>
+                <p class="text-[10px] text-gray-600 uppercase font-black tracking-widest mb-4">AI / GPT-4 / Python</p>
+                <p class="text-xs text-gray-500 italic">Personalized learning platform built using LLMs and AWS Lambda.</p>
             </div>
-            <div class="bento-card rounded-3xl p-8">
-                <i class="fas fa-link text-purple-500 mb-4 text-xl"></i>
-                <h4 class="font-bold mb-1">DeBnB</h4>
-                <p class="text-[10px] text-gray-600 uppercase font-black tracking-widest mb-4">Web 3.0 / Solidity</p>
-                <p class="text-xs text-gray-500 leading-relaxed italic">Decentralized vacation rental engine with containerized smart contracts.</p>
+            <div class="bento-card rounded-3xl p-8 hover:bg-blue-900/10 transition">
+                <i class="fas fa-cloud text-green-500 mb-4 text-xl"></i>
+                <h4 class="font-bold mb-1">Cloud Automation</h4>
+                <p class="text-[10px] text-gray-600 uppercase font-black tracking-widest mb-4">GCP / AWS / Docker</p>
+                <p class="text-xs text-gray-500 italic">Containerized deployment of 1000+ signed contracts on cloud networks.</p>
             </div>
-            <div class="bento-card rounded-3xl p-8">
-                <i class="fas fa-chart-line text-pink-500 mb-4 text-xl"></i>
+            <div class="bento-card rounded-3xl p-8 hover:bg-blue-900/10 transition">
+                <i class="fas fa-code text-purple-500 mb-4 text-xl"></i>
                 <h4 class="font-bold mb-1">AutoGram</h4>
-                <p class="text-[10px] text-gray-600 uppercase font-black tracking-widest mb-4">Event-Driven / Kafka</p>
-                <p class="text-xs text-gray-500 leading-relaxed italic">Auto-scaled social media app with MongoDB real-time data storage.</p>
+                <p class="text-[10px] text-gray-600 uppercase font-black tracking-widest mb-4">Kafka / Microservices</p>
+                <p class="text-xs text-gray-500 italic">Event-driven platform utilizing Spring Boot and Apache Kafka.</p>
             </div>
-            <div class="bento-card rounded-3xl p-8">
-                <i class="fas fa-car text-green-500 mb-4 text-xl"></i>
-                <h4 class="font-bold mb-1">BookAV.com</h4>
-                <p class="text-[10px] text-gray-600 uppercase font-black tracking-widest mb-4">SaaS / WebSockets</p>
-                <p class="text-xs text-gray-500 leading-relaxed italic">Fault-tolerant SaaS platform for tracking autonomous vehicles via CARLA.</p>
+            <div class="bento-card rounded-3xl p-8 hover:bg-blue-900/10 transition">
+                <i class="fas fa-check-circle text-blue-400 mb-4 text-xl"></i>
+                <h4 class="font-bold mb-1">QA Suite</h4>
+                <p class="text-[10px] text-gray-600 uppercase font-black tracking-widest mb-4">JUnit / Selenium / CI</p>
+                <p class="text-xs text-gray-500 italic">Automated sanity testing for 30+ enterprise web applications.</p>
             </div>
         </div>
 
     </main>
 
     <footer class="py-20 text-center text-[10px] text-gray-700 tracking-[0.5em] font-black uppercase">
-        © 2025 Srikanth Nimmagadda — Senior Full-Stack Engineer • Gold Medalist
+        © 2025 Srikanth Nimmagadda — 505.718.1440 • Santa Fe, NM
     </footer>
 </body>
 </html>
