@@ -1,152 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srikanth Nimmagadda | Portfolio 2025</title>
+    <title>Srikanth Nimmagadda | Senior AI & Full-Stack Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="cdnjs.cloudflare.com">
     <style>
         @import url('fonts.googleapis.com');
-        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; }
         .mono { font-family: 'JetBrains Mono', monospace; }
         .bento-card { background: #0f172a; border: 1px solid #1e293b; transition: all 0.3s ease; }
-        .bento-card:hover { border-color: #3b82f6; }
+        .bento-card:hover { border-color: #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.1); }
         .gradient-text { background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .mesh-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; 
+            background: radial-gradient(circle at 0% 0%, #1e293b 0%, #020617 100%); }
         b.stat { color: #60a5fa; font-weight: 800; }
+        .ai-glow { border-color: rgba(167, 139, 250, 0.4); background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
     </style>
 </head>
-<body class="p-6 md:p-16 lg:p-24">
+<body class="p-4 md:p-12 lg:p-20">
+    <div class="mesh-bg"></div>
 
-    <!-- Header Section -->
-    <nav class="max-w-6xl mx-auto mb-12 flex justify-between items-center bento-card p-6 rounded-3xl">
-        <div>
-            <h1 class="text-2xl font-extrabold tracking-tighter">SRIKANTH<span class="text-blue-500">.N</span></h1>
-            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-[0.3em]">Full-Stack Engineer</p>
-        </div>
-        <div class="flex gap-6 text-xl text-gray-400">
-            <a href="linkedin.com" class="hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
-            <a href="github.com" class="hover:text-white transition"><i class="fab fa-github"></i></a>
-            <a href="mailto:srikanth15107@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
+    <!-- NAVIGATION / CONTACT -->
+    <nav class="max-w-6xl mx-auto mb-10 flex flex-wrap justify-between items-center gap-6 bento-card p-6 rounded-[2rem]">
+        <div class="mono text-blue-400 font-bold text-xl tracking-tighter">nisrika1.dev</div>
+        <div class="flex flex-wrap gap-6 text-xs font-bold text-gray-400 uppercase tracking-widest">
+            <a href="mailto:srikanth15107@gmail.com" class="hover:text-white"><i class="fas fa-envelope mr-2"></i>srikanth15107@gmail.com</a>
+            <a href="linkedin.com" class="hover:text-blue-500 transition"><i class="fab fa-linkedin mr-1"></i> LinkedIn</a>
+            <a href="github.com" class="hover:text-white transition"><i class="fab fa-github mr-1"></i> GitHub</a>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
+    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4">
         
-        <!-- About & 2025 AI Summary -->
-        <div class="md:col-span-8 bento-card rounded-[2.5rem] p-10 md:p-14">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-none tracking-tighter">
-                Building <span class="gradient-text">Intelligent</span> Systems.
-            </h2>
-            <p class="text-gray-400 text-lg leading-relaxed max-w-2xl">
-                4+ years experience at <b class="text-white">Deloitte, Capgemini, & IBM</b>. I bridge the gap between robust **Java Backend Architecture** and modern **Agentic AI workflows**. Currently focused on high-throughput microservices and **RAG-based automation**.
+        <!-- HERO SECTION -->
+        <div class="md:col-span-8 bento-card rounded-[2.5rem] p-10 md:p-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-none tracking-tighter">
+                Senior <span class="gradient-text">AI & Full-Stack</span> Engineer.
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed">
+                4+ years of expertise. Specialized in <b class="stat">Agentic AI Workflows</b>, high-throughput <b class="stat">Java/Spring Boot</b> systems, and <b class="stat">RAG Architectures</b>. Currently leading LLM-OCR automation at Deloitte.
             </p>
         </div>
 
-        <!-- Gold Medalist Recognition -->
-        <div class="md:col-span-4 bento-card rounded-[2.5rem] p-10 flex flex-col justify-center text-center bg-gradient-to-br from-blue-900/20 to-transparent">
-            <i class="fas fa-medal text-4xl text-yellow-500 mb-4"></i>
-            <h3 class="text-2xl font-extrabold">Gold Medalist</h3>
-            <p class="text-xs text-gray-500 uppercase font-bold mt-2">Academic Distinction • Class of 2019</p>
+        <!-- RECOGNITION CARD -->
+        <div class="md:col-span-4 bento-card rounded-[2.5rem] p-8 flex flex-col justify-center border-l-4 border-l-yellow-500/50">
+            <div class="mb-6">
+                <p class="text-[10px] text-yellow-500 font-black uppercase tracking-widest mb-1 font-bold">2019 Distinction</p>
+                <h3 class="text-3xl font-extrabold">Gold Medalist</h3>
+                <p class="text-xs text-gray-500 font-semibold tracking-tighter">Amrita Vishwa Vidyapeetham • B.Tech ECE</p>
+            </div>
+            <p class="text-[10px] text-blue-400 font-black uppercase tracking-widest mb-1 font-bold">2023 Advanced Degree</p>
+            <h3 class="text-xl font-bold text-gray-200">MS, Software Engineering</h3>
+            <p class="text-xs text-gray-500 font-semibold tracking-tighter">San Jose State University, CA</p>
         </div>
 
-        <!-- Professional Timeline (Complete Experience) -->
+        <!-- NEW: 2025 AI & EMERGING TECH STACK -->
+        <div class="md:col-span-12 bento-card ai-glow rounded-[2.5rem] p-10 border border-purple-500/30 shadow-2xl shadow-purple-500/10">
+            <h3 class="mono text-xs text-purple-400 mb-8 font-bold uppercase tracking-widest flex items-center gap-2">
+                <i class="fas fa-sparkles"></i> // Future_Ready_Orchestration_2025
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <p class="text-[10px] text-purple-300 font-black uppercase tracking-widest mb-4">Agentic AI & LLMs</p>
+                    <p class="text-xs leading-loose font-semibold">LangChain, GPT-4, Llama 3, Agentic Workflows, Structured AI Outputs, Prompt Engineering 2.0</p>
+                </div>
+                <div>
+                    <p class="text-[10px] text-purple-300 font-black uppercase tracking-widest mb-4">Vector Search & RAG</p>
+                    <p class="text-xs leading-loose font-semibold">PGVector (Postgres), FAISS, Pinecone, Retrieval-Augmented Generation, Semantic Search</p>
+                </div>
+                <div>
+                    <p class="text-[10px] text-purple-300 font-black uppercase tracking-widest mb-4">Modern Dev Experience</p>
+                    <p class="text-xs leading-loose font-semibold">Spring AI, Cursor, Windsurf, AI-driven CI/CD, Qodo, Observability (Traceability)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRADITIONAL TECH INVENTORY -->
+        <div id="skills" class="md:col-span-12 bento-card rounded-[2.5rem] p-10">
+            <h3 class="mono text-xs text-blue-500 mb-8 font-bold uppercase tracking-widest">// Technical_Stack_Inventory</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-4">Backend</p>
+                    <p class="text-xs leading-loose font-semibold">Java, Spring Boot, Spring MVC, Python, Node.js, Hibernate, Microservices, gRPC</p>
+                </div>
+                <div>
+                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-4">Frontend</p>
+                    <p class="text-xs leading-loose font-semibold">React, Redux, Angular, JavaScript (ES6+), Bootstrap, HTML5/CSS3</p>
+                </div>
+                <div>
+                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-4">Infrastructure</p>
+                    <p class="text-xs leading-loose font-semibold">AWS (EKS, S3, RDS, Lambda), Docker, Kubernetes, Kafka, Jenkins, Git</p>
+                </div>
+                <div>
+                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-4">Data/API/Security</p>
+                    <p class="text-xs leading-loose font-semibold">PostgreSQL, MongoDB, Oracle, Redis, REST, WebSockets, OAuth2, OpenID Connect</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DETAILED CAREER HISTORY -->
         <div id="experience" class="md:col-span-12 bento-card rounded-[2.5rem] p-10">
-            <h3 class="mono text-xs text-blue-500 mb-10 font-bold uppercase tracking-widest">// Professional_Timeline</h3>
+            <h3 class="mono text-xs text-blue-500 mb-10 font-bold uppercase tracking-widest">// Career_Snapshot</h3>
             <div class="space-y-12">
-                <!-- Deloitte -->
+                <!-- DELOITTE -->
                 <div class="relative pl-8 border-l border-blue-500/30">
                     <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <div class="flex justify-between items-baseline mb-4">
-                        <h4 class="text-xl font-bold">Deloitte — <span class="text-gray-500 font-normal">Software Engineer</span></h4>
-                        <span class="mono text-[10px] text-gray-500">2024 - PRESENT</span>
+                    <div class="flex flex-wrap justify-between items-baseline mb-6">
+                        <h4 class="text-2xl font-extrabold tracking-tight text-white">Deloitte <span class="text-sm font-normal text-gray-600 ml-2 italic">/ Software Engineer</span></h4>
+                        <span class="mono text-[10px] text-gray-500 font-bold tracking-widest uppercase">May 2024 — Present</span>
                     </div>
-                    <p class="text-sm text-gray-400 mb-4 italic">Focus: Agentic AI Integration & State Platforms</p>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-sm text-gray-400">
-                        <li>• Developed **LLM-OCR pipelines** reducing entry effort by <b class="stat">70%</b>.</li>
-                        <li>• Optimized Spring Boot APIs, achieving <b class="stat">25% latency reduction</b>.</li>
-                        <li>• Automated reporting via AWS QuickSight, saving <b class="stat">90%</b> of manual time.</li>
-                        <li>• Scaling microservices architecture for eligibility platforms.</li>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
+                        <li>• Engineered **LLM-OCR pipelines** utilizing GPT-4, <b class="stat">reducing manual data entry by 70%</b>.</li>
+                        <li>• Built AWS QuickSight analytics dashboards, reducing operational reporting time by <b class="stat">90%</b>.</li>
+                        <li>• Optimized Spring Boot APIs for WorkPath platforms, achieving a <b class="stat">25% latency reduction</b>.</li>
+                        <li>• Designed microservices architecture to ensure high-throughput and decoupled service delivery.</li>
                     </ul>
                 </div>
-
-                <!-- Capgemini -->
+                <!-- CAPGEMINI -->
                 <div class="relative pl-8 border-l border-gray-800">
                     <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-gray-800 rounded-full"></div>
-                    <div class="flex justify-between items-baseline mb-4">
-                        <h4 class="text-xl font-bold">Capgemini — <span class="text-gray-500 font-normal">Full Stack Developer</span></h4>
-                        <span class="mono text-[10px] text-gray-500">2023 - 2024</span>
+                    <div class="flex flex-wrap justify-between items-baseline mb-6">
+                        <h4 class="text-2xl font-extrabold tracking-tight text-gray-300">Capgemini <span class="text-sm font-normal text-gray-600 ml-2 italic">/ Full Stack Developer</span></h4>
+                        <span class="mono text-[10px] text-gray-500 font-bold tracking-widest uppercase">Jun 2023 — May 2024</span>
                     </div>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-sm text-gray-400">
-                        <li>• Refactored microservices with multithreading, <b class="stat">speedup of 90%</b>.</li>
-                        <li>• Implemented **OpenID Connect** for enterprise security compliance.</li>
-                        <li>• Improved DB efficiency by <b class="stat">25%</b> via MySQL schema tuning.</li>
-                        <li>• Reduced customer complaints by **40%** through rigorous code reviews.</li>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
+                        <li>• Refactored Microservices with multithreading, reducing processing times by <b class="stat">90%</b>.</li>
+                        <li>• Enhanced database efficiency by <b class="stat">25%</b> via MySQL indexing and schema optimization.</li>
+                        <li>• Implemented **OpenID Connect** for enterprise-grade authentication and data protection.</li>
+                        <li>• Led UI development with React/Redux, improving frontend load times by 40%.</li>
                     </ul>
                 </div>
-
                 <!-- IBM -->
                 <div class="relative pl-8 border-l border-gray-800">
                     <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-gray-800 rounded-full"></div>
-                    <div class="flex justify-between items-baseline mb-4">
-                        <h4 class="text-xl font-bold">IBM — <span class="text-gray-500 font-normal">Full Stack Developer</span></h4>
-                        <span class="mono text-[10px] text-gray-500">2019 - 2021</span>
+                    <div class="flex flex-wrap justify-between items-baseline mb-6">
+                        <h4 class="text-2xl font-extrabold tracking-tight text-gray-300">IBM <span class="text-sm font-normal text-gray-600 ml-2 italic">/ Java Full Stack Developer</span></h4>
+                        <span class="mono text-[10px] text-gray-500 font-bold tracking-widest uppercase">Jun 2019 — Jun 2021</span>
                     </div>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-sm text-gray-400">
-                        <li>• Engineered cloud platform reducing manual requests by <b class="stat">95%</b>.</li>
-                        <li>• Automated **1400+ sanity tests** using Selenium and Java.</li>
-                        <li>• Orchestrated Docker containers for consistent production deployment.</li>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
+                        <li>• Developed React/Node cloud platform, <b class="stat">eliminating 95% of manual requests</b>.</li>
+                        <li>• Automated **1400+ sanity tests** using Selenium/Java, ensuring 6x higher test frequency.</li>
+                        <li>• Orchestrated Docker containers for seamless deployment across production/test environments.</li>
+                        <li>• Liaised with support teams to triage bugs, achieving a 34% decrease in backlog.</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Integrated Skills Matrix (Resume + 2025 AI) -->
-        <div class="md:col-span-12 bento-card rounded-[2.5rem] p-10">
-            <h3 class="mono text-xs text-blue-500 mb-8 font-bold uppercase tracking-widest">// Technical_Inventory</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div>
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-3">Backend & AI</p>
-                    <p class="text-xs font-semibold leading-relaxed">Java, Spring Boot, Python, **LangChain**, **RAG**, Kafka, gRPC, Node.js</p>
-                </div>
-                <div>
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-3">Frontend</p>
-                    <p class="text-xs font-semibold leading-relaxed">React, Angular, Redux, JavaScript (ES6+), Bootstrap, HTML5/CSS3</p>
-                </div>
-                <div>
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-3">Cloud/DevOps</p>
-                    <p class="text-xs font-semibold leading-relaxed">AWS (EKS, Lambda, S3), Docker, Kubernetes, Jenkins, Git, **Spring AI**</p>
-                </div>
-                <div>
-                    <p class="text-[10px] text-gray-600 font-black uppercase tracking-widest mb-3">Databases</p>
-                    <p class="text-xs font-semibold leading-relaxed">PostgreSQL, MongoDB, Oracle, **PGVector**, Redis, Elasticsearch</p>
-                </div>
+        <!-- STRATEGIC PROJECTS -->
+        <div id="projects" class="md:col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bento-card rounded-3xl p-8 hover:bg-purple-900/10 transition">
+                <i class="fas fa-robot text-purple-500 mb-4 text-xl"></i>
+                <h4 class="font-bold mb-1 italic">EduGenie AI</h4>
+                <p class="text-[10px] text-gray-600 font-black tracking-widest mb-4">RAG / LangChain / Vector DB</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Personalized learning via adaptive RAG architecture for 2k+ users.</p>
             </div>
-        </div>
-
-        <!-- Featured Projects (Education Integrated) -->
-        <div class="md:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bento-card rounded-3xl p-8 bg-blue-600/5">
-                <p class="text-[10px] text-blue-500 font-bold uppercase mb-2">Academic Core</p>
-                <h4 class="font-bold mb-1">SJSU Graduate</h4>
-                <p class="text-xs text-gray-500">MS in Software Engineering (Class of 2023)</p>
+            <div class="bento-card rounded-3xl p-8 hover:bg-blue-900/10 transition">
+                <i class="fas fa-link text-blue-500 mb-4 text-xl"></i>
+                <h4 class="font-bold mb-1 italic">DeBnB</h4>
+                <p class="text-[10px] text-gray-600 font-black tracking-widest mb-4">Web 3.0 / Solidity</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Decentralized rental protocol with containerized Solidity contracts.</p>
             </div>
-            <div class="bento-card rounded-3xl p-8 border-purple-500/20">
-                <p class="text-[10px] text-purple-500 font-bold uppercase mb-2">Portfolio Piece</p>
-                <h4 class="font-bold mb-1">EduGenie AI</h4>
-                <p class="text-xs text-gray-500 leading-relaxed italic">Adaptive learning agent using RAG & GPT-4 for 2k+ users.</p>
+            <div class="bento-card rounded-3xl p-8 hover:bg-pink-900/10 transition">
+                <i class="fas fa-bolt text-pink-500 mb-4 text-xl"></i>
+                <h4 class="font-bold mb-1 italic">AutoGram</h4>
+                <p class="text-[10px] text-gray-600 font-black tracking-widest mb-4">Event-Driven / Kafka</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Real-time image social platform scaled with MongoDB and Kafka.</p>
             </div>
-            <div class="bento-card rounded-3xl p-8 border-pink-500/20">
-                <p class="text-[10px] text-pink-500 font-bold uppercase mb-2">System Design</p>
-                <h4 class="font-bold mb-1">DeBnB Protocol</h4>
-                <p class="text-xs text-gray-500 leading-relaxed italic">Decentralized rental solution using Solidity & Docker on AWS.</p>
+            <div class="bento-card rounded-3xl p-8 hover:bg-green-900/10 transition">
+                <i class="fas fa-car text-green-500 mb-4 text-xl"></i>
+                <h4 class="font-bold mb-1 italic">BookAV.com</h4>
+                <p class="text-[10px] text-gray-600 font-black tracking-widest mb-4">SaaS / WebSockets</p>
+                <p class="text-xs text-gray-500 leading-relaxed">Fault-tolerant autonomous rental tracking with CARLA simulation.</p>
             </div>
         </div>
 
     </main>
 
     <footer class="py-20 text-center text-[10px] text-gray-700 tracking-[0.5em] font-black uppercase">
-        © 2025 Srikanth Nimmagadda • Santa Fe, NM • +1(505)-718-1440
+        © 2025 Srikanth Nimmagadda — Senior Software Engineer • Santa Fe, NM
     </footer>
 </body>
 </html>
