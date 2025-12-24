@@ -3,136 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srikanth | Full-Stack & AI Engineer</title>
+    <title>Srikanth | Full-Stack & AI Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="cdnjs.cloudflare.com">
     <style>
         @import url('fonts.googleapis.com');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030712; color: #f3f4f6; }
+        
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background-color: #030712; 
+            color: #f3f4f6; 
+            overflow-x: hidden;
+        }
+
+        /* 2025 Mesh Gradient Background */
+        .mesh-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.1) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
+            filter: blur(80px);
+        }
+
+        .bento-card { 
+            background: rgba(17, 24, 39, 0.4); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(16px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        
+        .bento-card:hover { 
+            border-color: rgba(59, 130, 246, 0.4); 
+            background: rgba(31, 41, 55, 0.6);
+            transform: translateY(-5px);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #a78bfa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
         .mono { font-family: 'JetBrains Mono', monospace; }
-        .bento-card { background: rgba(17, 24, 39, 0.7); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .bento-card:hover { border-color: rgba(59, 130, 246, 0.5); transform: scale(1.01); background: rgba(31, 41, 55, 0.7); }
-        .project-image { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
-        .glow-text { text-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
     </style>
 </head>
-<body class="selection:bg-blue-500/30">
+<body>
+
+    <div class="mesh-bg"></div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 px-6 py-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-3 bento-card rounded-full backdrop-blur-xl">
-            <span class="mono font-bold text-blue-500">nisrika1.dev</span>
-            <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-gray-400">
-                <a href="#work" class="hover:text-blue-500 transition">Work</a>
-                <a href="#stack" class="hover:text-blue-500 transition">Stack</a>
-                <a href="mailto:srikanth15107@gmail.com" class="text-white hover:text-blue-500 transition">Connect</a>
+    <nav class="fixed top-6 left-0 right-0 z-50 px-4">
+        <div class="max-w-4xl mx-auto bento-card rounded-full px-8 py-3 flex justify-between items-center">
+            <span class="mono font-bold text-blue-400">SRIKANTH.DEV</span>
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-gray-400">
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="mailto:srikanth15107@gmail.com" class="text-white">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 pt-32 pb-20">
+    <main class="max-w-6xl mx-auto px-6 pt-40 pb-20">
         
-        
-        <section class="grid grid-cols-1 md:grid-cols-12 gap-4 mb-4">
-            <div class="md:col-span-8 bento-card rounded-[2.5rem] p-10 md:p-16">
-                <h1 class="text-5xl md:text-8xl font-extrabold mb-8 leading-none tracking-tighter">
-                    I build <span class="text-blue-500 glow-text">scalable</span> <br/>digital products.
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-6">
+            <div class="md:col-span-8 bento-card rounded-[3rem] p-12 md:p-20">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase mb-8">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span> Available for 2025 Roles
+                </div>
+                <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-[0.9] tracking-tighter">
+                    Full-Stack <br/> <span class="text-gradient">Architect.</span>
                 </h1>
                 <p class="text-gray-400 text-lg md:text-xl max-w-xl leading-relaxed">
-                    Full-Stack Engineer at <span class="text-white font-semibold">Deloitte</span>. Specializing in high-throughput Java systems and AI-driven automation. 
+                    Building the future of automation at <span class="text-white font-bold">Deloitte</span>. Specialized in LLM-OCR pipelines and 99.9% uptime Java microservices.
                 </p>
             </div>
-            <div class="md:col-span-4 bento-card rounded-[2.5rem] p-10 flex flex-col justify-between">
-                <div class="flex justify-end">
-                    <div class="bg-green-500/10 text-green-500 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-green-500/20">
-                        Active 2025
-                    </div>
+            <div class="md:col-span-4 grid gap-6">
+                <div class="bento-card rounded-[3rem] p-10 flex flex-col justify-center text-center">
+                    <i class="fas fa-medal text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold">Gold Medalist</h3>
+                    <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest leading-relaxed">Top Ranker • Class of 2019</p>
                 </div>
-                <div>
-                    <p class="text-xs text-gray-500 font-bold uppercase mb-2">Location</p>
-                    <p class="text-2xl font-bold">Santa Fe, NM</p>
-                    <div class="flex gap-4 mt-6 text-2xl text-gray-600">
-                        <a href="github.com" class="hover:text-white transition"><i class="fab fa-github"></i></a>
-                        <a href="linkedin.com" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                <div class="bento-card rounded-[3rem] p-10 flex flex-col justify-center text-center">
+                    <h3 class="text-4xl font-black text-blue-400 italic">90%</h3>
+                    <p class="text-gray-300 font-bold mt-2 leading-tight">Manual reporting <br/> reduction</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <h2 id="projects" class="text-xs font-bold text-gray-500 uppercase tracking-[0.5em] mb-8 ml-6">Selected Works</h2>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24">
+            <div class="bento-card rounded-[3rem] p-10 group overflow-hidden">
+                <div class="flex justify-between items-start mb-12">
+                    <div class="p-4 rounded-3xl bg-blue-500/10 text-blue-400">
+                        <i class="fas fa-robot text-2xl"></i>
+                    </div>
+                    <span class="mono text-[10px] text-gray-500">2024 / CASE STUDY</span>
+                </div>
+                <h3 class="text-3xl font-bold mb-4">EduGenie AI</h3>
+                <p class="text-gray-400 mb-8 leading-relaxed">An AI-powered adaptive learning ecosystem utilizing <span class="text-white">GPT-4 and Vector Databases</span> to personalize education for 2,000+ users.</p>
+                <div class="flex gap-3">
+                    <span class="text-[10px] font-bold text-gray-500 px-3 py-1 rounded-full border border-white/5">PYTHON</span>
+                    <span class="text-[10px] font-bold text-gray-500 px-3 py-1 rounded-full border border-white/5">AWS</span>
+                </div>
+            </div>
+
+            <div class="bento-card rounded-[3rem] p-10 group">
+                <div class="flex justify-between items-start mb-12">
+                    <div class="p-4 rounded-3xl bg-purple-500/10 text-purple-400">
+                        <i class="fas fa-link text-2xl"></i>
+                    </div>
+                    <span class="mono text-[10px] text-gray-500">2023 / BLOCKCHAIN</span>
+                </div>
+                <h3 class="text-3xl font-bold mb-4">DeBnB Protocol</h3>
+                <p class="text-gray-400 mb-8 leading-relaxed">Decentralized vacation rental platform built on Ethereum. Engineered secure <span class="text-white">Solidity Smart Contracts</span> for trustless rental transactions.</p>
+                <div class="flex gap-3">
+                    <span class="text-[10px] font-bold text-gray-500 px-3 py-1 rounded-full border border-white/5">SOLIDITY</span>
+                    <span class="text-[10px] font-bold text-gray-500 px-3 py-1 rounded-full border border-white/5">DOCKER</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capgemini Spotlight (Professional Expansion) -->
+        <h2 id="experience" class="text-xs font-bold text-gray-500 uppercase tracking-[0.5em] mb-8 ml-6">Professional Spotlight</h2>
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+            <div class="md:col-span-12 bento-card rounded-[3rem] p-12 border-l-4 border-l-blue-500/50">
+                <div class="flex flex-col md:flex-row justify-between mb-8">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-1">Capgemini</h3>
+                        <p class="text-blue-400 mono text-sm uppercase font-bold tracking-widest">Full Stack Developer • CA, US</p>
+                    </div>
+                    <span class="text-gray-500 text-sm mt-4 md:mt-0 font-bold tracking-widest">JUN 2023 — MAY 2024</span>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <p class="text-white font-bold mb-2">Refactored Core Services</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">Integrated advanced multithreading that reduced request processing times by <span class="text-blue-400 font-bold">90%</span> for enterprise e-commerce traffic.</p>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold mb-2">Zero-Trust Security</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">Implemented <span class="text-blue-400 font-bold">OpenID Connect (OIDC)</span> ensuring military-grade security for application authentication.</p>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold mb-2">DB Performance</p>
+                        <p class="text-gray-400 text-sm leading-relaxed">Optimized MySQL schemas and query indexing, achieving <span class="text-blue-400 font-bold">25% efficiency gains</span> in complex data retrieval.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Project Portfolio Grid -->
-        <h2 id="work" class="text-sm font-black text-gray-600 uppercase tracking-[0.4em] mt-20 mb-8 ml-4">Featured Works</h2>
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            
-            <!-- Project 1: Large -->
-            <div class="bento-card rounded-[2.5rem] overflow-hidden group">
-                <div class="h-64 project-image flex items-center justify-center p-12">
-                    <i class="fas fa-brain text-7xl text-blue-500/20 group-hover:scale-110 transition-transform duration-500"></i>
+        <!-- Technical Matrix -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bento-card rounded-[3rem] p-12">
+                <h4 class="text-gray-500 uppercase text-[10px] font-bold tracking-[0.3em] mb-8">Engineering Stack</h4>
+                <ul class="space-y-4 text-sm font-bold">
+                    <li class="flex items-center gap-3"><i class="fab fa-java text-blue-400"></i> Java / Spring Boot</li>
+                    <li class="flex items-center gap-3"><i class="fab fa-react text-blue-400"></i> React / Redux</li>
+                    <li class="flex items-center gap-3"><i class="fab fa-aws text-blue-400"></i> AWS Cloud (EKS, S3)</li>
+                    <li class="flex items-center gap-3"><i class="fab fa-docker text-blue-400"></i> Docker / Kubernetes</li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 bento-card rounded-[3rem] p-12 flex flex-col justify-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 italic">Looking for a Senior Engineer?</h2>
+                <p class="text-gray-400 mb-10 leading-relaxed max-w-lg">I solve complex architectural problems with clean, scalable code. Let's discuss your next massive project.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="mailto:srikanth15107@gmail.com" class="px-8 py-4 rounded-full bg-white text-black font-black uppercase tracking-widest hover:bg-blue-400 transition shadow-xl shadow-white/5">Start Chat</a>
+                    <a href="linkedin.com" class="px-8 py-4 rounded-full bento-card font-black uppercase tracking-widest hover:text-white">LinkedIn</a>
                 </div>
-                <div class="p-10">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-3xl font-bold">EduGenie AI</h3>
-                        <span class="mono text-blue-500 text-xs font-bold">01/</span>
-                    </div>
-                    <p class="text-gray-400 mb-8 leading-relaxed">An AI-powered adaptive learning platform serving 2,000+ users. Integrated GPT-4 and Vector Databases (FAISS) to create personalized learning paths.</p>
-                    <div class="flex gap-2">
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-[10px] font-bold">PYTHON</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-[10px] font-bold">GPT-4</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-[10px] font-bold">LANGCHAIN</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bento-card rounded-[2.5rem] overflow-hidden group">
-                <div class="h-64 project-image flex items-center justify-center p-12">
-                    <i class="fas fa-file-invoice text-7xl text-purple-500/20 group-hover:scale-110 transition-transform duration-500"></i>
-                </div>
-                <div class="p-10">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-3xl font-bold">LLM-OCR Engine</h3>
-                        <span class="mono text-blue-500 text-xs font-bold">02/</span>
-                    </div>
-                    <p class="text-gray-400 mb-8 leading-relaxed">Enterprise automation pipeline developed for Deloitte. Reduced manual document processing time by 70% using computer vision and Large Language Models.</p>
-                    <div class="flex gap-2">
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-[10px] font-bold">JAVA</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-[10px] font-bold">AWS LAMBDA</span>
-                        <span class="bg-white/5 border border-white/10 px-3 py-1 rounded-full text-[10px] font-bold">SPRING</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Stack Bento -->
-        <h2 id="stack" class="text-sm font-black text-gray-600 uppercase tracking-[0.4em] mt-20 mb-8 ml-4">Architecture & Tools</h2>
-        <section class="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div class="bento-card rounded-3xl p-8 flex flex-col justify-center items-center text-center">
-                <i class="fab fa-java text-4xl text-orange-500 mb-4"></i>
-                <p class="font-bold">Backend</p>
-                <p class="text-xs text-gray-500 mt-2 leading-tight">Spring Boot, Kafka, Microservices, gRPC</p>
-            </div>
-            <div class="bento-card rounded-3xl p-8 flex flex-col justify-center items-center text-center">
-                <i class="fab fa-react text-4xl text-blue-400 mb-4"></i>
-                <p class="font-bold">Frontend</p>
-                <p class="text-xs text-gray-500 mt-2 leading-tight">React.js, Redux, Angular, Node.js</p>
-            </div>
-            <div class="bento-card rounded-3xl p-8 flex flex-col justify-center items-center text-center">
-                <i class="fab fa-aws text-4xl text-yellow-500 mb-4"></i>
-                <p class="font-bold">Infrastructure</p>
-                <p class="text-xs text-gray-500 mt-2 leading-tight">EKS, S3, Docker, Kubernetes, Jenkins</p>
-            </div>
-            <div class="bento-card rounded-3xl p-8 flex flex-col justify-center items-center text-center text-yellow-500 border border-yellow-500/20">
-                <i class="fas fa-medal text-4xl mb-4"></i>
-                <p class="font-bold">Gold Medalist</p>
-                <p class="text-xs text-gray-500 mt-2 leading-tight">Academic Honor Class of 2019</p>
             </div>
         </section>
 
     </main>
 
-    <footer class="max-w-6xl mx-auto px-6 py-20 text-center border-t border-white/5">
-        <h3 class="text-4xl font-bold mb-8">Ready to build something <span class="text-blue-500">massive?</span></h3>
-        <a href="mailto:srikanth15107@gmail.com" class="inline-block bg-white text-black px-12 py-4 rounded-full font-black uppercase tracking-widest hover:bg-blue-500 hover:text-white transition-all">Start a Conversation</a>
-        <p class="mt-20 text-[10px] text-gray-700 tracking-[0.5em] uppercase">© 2025 Srikanth Nimmagadda — 505.718.1440</p>
+    <footer class="py-20 text-center">
+        <p class="text-[10px] text-gray-700 tracking-[0.5em] font-black uppercase">© 2025 Srikanth Nimmagadda • 505-718-1440</p>
     </footer>
 
 </body>
