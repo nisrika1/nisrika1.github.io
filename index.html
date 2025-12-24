@@ -1,129 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srikanth Nimmagadda | Senior Full-Stack Engineer</title>
+    <title>Srikanth Nimmagadda | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cdnjs.cloudflare.com">
     <style>
-        :root { --primary: #2563eb; --text: #1e293b; --light: #64748b; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #fcfcfc; }
-        header { border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; font-size: 2.5em; letter-spacing: -1px; }
-        h2 { font-size: 1.3em; text-transform: uppercase; color: var(--primary); letter-spacing: 1px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; margin-top: 40px; }
-        .contact { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; font-weight: 600; font-size: 0.9em; }
-        .contact a { color: var(--primary); text-decoration: none; }
-        
-        .tagline { font-size: 1.2em; color: var(--light); font-weight: 400; margin-top: 5px; }
-        .highlight-box { background: #eff6ff; border-left: 4px solid var(--primary); padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
-        
-        .job-card { margin-bottom: 30px; }
-        .job-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.1em; }
-        .job-meta { color: var(--primary); font-size: 0.9em; font-weight: 600; margin-bottom: 8px; }
-        
-        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background: #fff; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; }
-        .skill-item b { display: block; color: #0f172a; margin-bottom: 4px; }
-        
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        b.stat { color: #000; font-weight: 800; border-bottom: 1px solid #dbeafe; }
-        
-        .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .project-card { border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; transition: 0.2s; }
-        .project-card:hover { border-color: var(--primary); background: #fff; }
-
-        @media (max-width: 600px) { .skills-grid, .project-grid, .job-header { grid-template-columns: 1fr; flex-direction: column; } }
+        @import url('fonts.googleapis.com');
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.8); }
+        .gradient-bg { background: radial-gradient(circle at 0% 0%, #f8fafc 0%, #f1f5f9 100%); }
     </style>
 </head>
-<body>
+<body class="gradient-bg text-slate-900 min-h-screen">
 
-    <header>
-        <h1>Srikanth Nimmagadda</h1>
-        <div class="tagline">Senior Full-Stack Engineer | Distributed Systems & AI Integration</div>
-        <div class="contact">
-            <span>Santa Fe, NM</span>
-            <span>+1 (505) 718-1440</span>
-            <a href="mailto:srikanth15107@gmail.com">srikanth15107@gmail.com</a>
-            <a href="linkedin.com">LinkedIn</a>
-            <a href="github.com">GitHub</a>
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 glass-card bg-white/70 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+            <span class="font-extrabold text-xl tracking-tight text-blue-600">SRIKANTH<span class="text-slate-400">.N</span></span>
+            <div class="flex gap-6 text-sm font-semibold">
+                <a href="mailto:srikanth15107@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Get In Touch</a>
+            </div>
         </div>
     </header>
 
-    <div class="highlight-box">
-        <strong>2025 Executive Summary:</strong> Full-Stack Engineer with <b class="stat">4+ years of experience</b> specializing in Java/Spring Boot ecosystems and AWS cloud architecture. Proven track record in <b class="stat">AI-automation</b> (LLM/OCR) and high-throughput microservices. Recently recognized for reducing manual operational overhead by <b class="stat">70-90%</b> across state-level enterprise platforms.
-    </div>
+    <main class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Sidebar: Profile & Skills -->
+        <aside class="lg:col-span-4 space-y-8">
+            <div class="glass-card p-8 rounded-3xl shadow-sm">
+                <h1 class="text-3xl font-extrabold text-slate-900 mb-2">Srikanth Nimmagadda</h1>
+                <p class="text-blue-600 font-semibold mb-6">Senior Full-Stack Engineer</p>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                    4+ years experience building scalable microservices and AI-driven platforms. Recently optimized Deloitte’s WorkPath platforms and LLM-OCR pipelines.
+                </p>
+                <div class="flex gap-4 text-slate-400 text-xl">
+                    <a href="linkedin.com" class="hover:text-blue-600 transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="github.com" class="hover:text-slate-900 transition"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
 
-    <h2>Core Technical Expertise</h2>
-    <div class="skills-grid">
-        <div class="skill-item">
-            <b>Backend & Distributed Systems</b>
-            Java (J2EE), Spring Boot, Microservices Architecture, Apache Kafka, Hibernate, RESTful APIs, gRPC.
+            <div class="glass-card p-8 rounded-3xl shadow-sm">
+                <h2 class="text-sm font-black uppercase tracking-widest text-slate-400 mb-6 underline decoration-blue-500 decoration-4 underline-offset-8">Core Expertise</h2>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-xs font-bold text-slate-800 mb-2 uppercase">Backend & Architecture</p>
+                        <div class="flex flex-wrap gap-2 text-[11px] font-bold">
+                            <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">Java / Spring Boot</span>
+                            <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">Microservices</span>
+                            <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">Kafka</span>
+                            <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded">gRPC</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-800 mb-2 mt-4 uppercase">Cloud & Platform</p>
+                        <div class="flex flex-wrap gap-2 text-[11px] font-bold">
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded">AWS (EKS/S3/Lambda)</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded">Kubernetes</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded">Docker</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded">Terraform</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-800 mb-2 mt-4 uppercase">AI & Data</p>
+                        <div class="flex flex-wrap gap-2 text-[11px] font-bold">
+                            <span class="bg-purple-50 text-purple-700 px-2 py-1 rounded">GenAI (GPT-4/LangChain)</span>
+                            <span class="bg-purple-50 text-purple-700 px-2 py-1 rounded">PostgreSQL</span>
+                            <span class="bg-purple-50 text-purple-700 px-2 py-1 rounded">Vector DBs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Side: Content -->
+        <div class="lg:col-span-8 space-y-10">
+            
+            <!-- High-Impact Achievement Banner -->
+            <div class="bg-slate-900 rounded-3xl p-8 text-white flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-1">Key 2025 Highlight</p>
+                    <h3 class="text-xl font-bold italic">"Engineered an LLM-OCR pipeline reducing manual entry by 70%"</h3>
+                </div>
+                <div class="text-center">
+                    <span class="block text-3xl font-black text-blue-400">90%</span>
+                    <span class="text-[10px] uppercase text-slate-400">Process Speedup</span>
+                </div>
+            </div>
+
+            <!-- Professional Experience Timeline -->
+            <section>
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-8 flex items-center gap-3">
+                    <i class="fas fa-briefcase text-blue-600"></i> Work Experience
+                </h2>
+                <div class="space-y-12">
+                    <div class="relative pl-8 border-l-2 border-slate-200">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-sm"></div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-lg font-bold">Software Engineer @ Deloitte</h4>
+                            <span class="text-xs font-bold text-slate-400 px-2 py-1 bg-slate-100 rounded">2024 — Present</span>
+                        </div>
+                        <ul class="text-sm text-slate-600 space-y-3 list-disc ml-4">
+                            <li>Architected <span class="text-slate-900 font-semibold">RESTful APIs</span> with Spring Boot, improving WorkPath response times by 25%.</li>
+                            <li>Automated reporting via <span class="text-slate-900 font-semibold">AWS QuickSight</span>, accelerating state program decision-making by 90%.</li>
+                        </ul>
+                    </div>
+
+                    <div class="relative pl-8 border-l-2 border-slate-200">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white"></div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-lg font-bold text-slate-700">Java Full Stack Developer @ IBM</h4>
+                            <span class="text-xs font-bold text-slate-400 px-2 py-1 bg-slate-100 rounded">2019 — 2021</span>
+                        </div>
+                        <ul class="text-sm text-slate-600 space-y-3 list-disc ml-4">
+                            <li>Eliminated <span class="text-slate-900 font-semibold">95% of manual resource requests</span> via React/Node platform.</li>
+                            <li>Increased test frequency <span class="text-slate-900 font-semibold">6x</span> through Selenium automation of 1400+ sanity cases.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Banner -->
+            <section class="bg-blue-50 border border-blue-100 rounded-3xl p-8">
+                <div class="flex items-center gap-6">
+                    <div class="text-4xl">🎓</div>
+                    <div>
+                        <h4 class="font-extrabold text-slate-900">San Jose State University</h4>
+                        <p class="text-sm text-slate-600">MS in Computer Software Engineering (2023)</p>
+                        <p class="text-blue-600 text-xs font-bold uppercase mt-2"><i class="fas fa-medal mr-1"></i> B.Tech Gold Medalist (2019)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Cards Grid -->
+            <section>
+                <h2 class="text-2xl font-extrabold text-slate-900 mb-8 flex items-center gap-3">
+                    <i class="fas fa-rocket text-blue-600"></i> Featured Projects
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-card p-6 rounded-3xl group hover:shadow-xl hover:shadow-blue-900/5 transition">
+                        <h5 class="font-bold text-slate-900 group-hover:text-blue-600 transition mb-2">EduGenie AI</h5>
+                        <p class="text-xs text-slate-500 mb-4">Adaptive learning engine using GPT-4 and Vector DBs.</p>
+                        <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-1 rounded">GenAI</span>
+                    </div>
+                    <div class="glass-card p-6 rounded-3xl group hover:shadow-xl hover:shadow-blue-900/5 transition">
+                        <h5 class="font-bold text-slate-900 group-hover:text-blue-600 transition mb-2">DeBnB Blockchain</h5>
+                        <p class="text-xs text-slate-500 mb-4">Web 3.0 property rental engine with Solidity contracts.</p>
+                        <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-1 rounded">Solidity / Docker</span>
+                    </div>
+                </div>
+            </section>
+
         </div>
-        <div class="skill-item">
-            <b>Cloud & Platform Engineering</b>
-            AWS (EKS, ECS, S3, RDS, Lambda), Docker, Kubernetes, CI/CD (Jenkins, Git), Terraform, Shell Scripting.
-        </div>
-        <div class="skill-item">
-            <b>Frontend & Mobile</b>
-            React.js, Redux, Angular, Node.js, JavaScript (ES6+), HTML5/CSS3, Bootstrap.
-        </div>
-        <div class="skill-item">
-            <b>Data & AI/ML</b>
-            PostgreSQL, MongoDB, Oracle DB, MySQL, Elasticsearch, GPT-4 API, LangChain, FAISS (Vector DB).
-        </div>
-    </div>
+    </main>
 
-    <h2>Professional Experience</h2>
-
-    <div class="job-card">
-        <div class="job-header"><span>Deloitte</span> <span>May 2024 – Present</span></div>
-        <div class="job-meta">Software Engineer (Enterprise Solutions)</div>
-        <ul>
-            <li><b>AI Innovation:</b> Architected an LLM-OCR pipeline utilizing GPT-4 to automate high-volume form processing, increasing data extraction accuracy and <b class="stat">reducing manual entry by 70%</b>.</li>
-            <li><b>System Performance:</b> Optimized Spring Boot RESTful APIs for the WorkPath platform, achieving a <b class="stat">25% reduction in latency</b> and supporting higher concurrent user loads.</li>
-            <li><b>Data Visualization:</b> Built state-program dashboards using AWS QuickSight, transforming raw datasets into actionable insights and <b class="stat">slashing reporting turnaround time by 90%</b>.</li>
-        </ul>
-    </div>
-
-    <div class="job-card">
-        <div class="job-header"><span>Capgemini</span> <span>Jun 2023 – May 2024</span></div>
-        <div class="job-meta">Full Stack Developer</div>
-        <ul>
-            <li><b>Performance Engineering:</b> Refactored core microservices with advanced multithreading techniques, leading to a <b class="stat">90% improvement</b> in request processing efficiency for e-commerce workflows.</li>
-            <li><b>Security:</b> Implemented enterprise-grade security protocols using <b>OpenID Connect (OIDC)</b> and OAuth2 to ensure zero-trust compliance for sensitive user data.</li>
-            <li><b>Database Optimization:</b> Tuned MySQL schemas and indexing strategies that resulted in <b class="stat">25% faster query execution</b> for complex data retrieval.</li>
-        </ul>
-    </div>
-
-    <div class="job-card">
-        <div class="job-header"><span>IBM</span> <span>Jun 2019 – Jun 2021</span></div>
-        <div class="job-meta">Java Full Stack Developer</div>
-        <ul>
-            <li><b>Cloud Orchestration:</b> Engineered a React/Node.js management dashboard that automated resource allocation, <b class="stat">eliminating 95% of manual resource requests</b>.</li>
-            <li><b>QA Automation:</b> Spearheaded a Selenium/Java testing suite covering 30+ web apps, driving a <b class="stat">6x increase in test frequency</b> and ensuring 99.9% deployment stability.</li>
-            <li><b>Notification Scale:</b> Led development of a Spring Boot notification engine serving <b class="stat">10,000+ active users</b> with real-time event processing.</li>
-        </ul>
-    </div>
-
-    <h2>Strategic Projects</h2>
-    <div class="project-grid">
-        <div class="project-card">
-            <h3>EduGenie (GenAI)</h3>
-            <p>Integrated <b>LangChain</b> and <b>Vector Databases</b> to build a personalized learning agent. Optimized prompt engineering to serve 2,000+ global users.</p>
-        </div>
-        <div class="project-card">
-            <h3>DeBnB (Web 3.0)</h3>
-            <p>Developed a decentralized rental engine using <b>Solidity Smart Contracts</b>. Containerized the entire blockchain node stack using Docker on AWS ECS.</p>
-        </div>
-    </div>
-
-    <h2>Education & Honors</h2>
-    <p>
-        <b>Master of Science in Computer Software Engineering</b> | San Jose State University (2023)<br>
-        <b>Bachelor of Tech. in Electronics & Communication</b> | <b class="stat text-primary">Gold Medalist (Class of 2019)</b> | Amrita Vishwa Vidyapeetham
-    </p>
-
-    <footer>
-        &copy; 2025 Srikanth Nimmagadda • Generated for Professional Outreach • Santa Fe, NM
+    <footer class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-200 text-center">
+        <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">© 2025 Srikanth Nimmagadda • Santa Fe, NM</p>
     </footer>
 
 </body>
